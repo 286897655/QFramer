@@ -109,7 +109,7 @@ void MainWindow::mouseDoubleClickEvent(QMouseEvent *event)
 {
     if(event->y() > getTitleBar()->height())
     {
-        rightfloatWindow->setVisible(not rightfloatWindow->isVisible());
+        rightfloatWindow->setVisible(! rightfloatWindow->isVisible());
     }
     FMainWindow::mouseDoubleClickEvent(event);
 }

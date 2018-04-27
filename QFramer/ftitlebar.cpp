@@ -127,7 +127,7 @@ void FTitleBar::changeFix()
     else{
         fixButton->setIcon(QIcon(":/skin/icons/dark/appbar.unlock.keyhole.png"));
     }
-    fixflag = not fixflag;
+    fixflag = ! fixflag;
 }
 
 

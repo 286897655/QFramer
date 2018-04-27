@@ -171,7 +171,7 @@ void FMainWindow::mousePressEvent(QMouseEvent *e)
 {
     if(e->button() & Qt::LeftButton)
     {
-        if(e->y() < titleBar->height() and e->x() > titleBar->width() - 120)
+        if(e->y() < titleBar->height() && e->x() > titleBar->width() - 120)
         {
             leftbuttonpressed = false;
         }
@@ -186,7 +186,7 @@ void FMainWindow::mousePressEvent(QMouseEvent *e)
 
 void FMainWindow::mouseDoubleClickEvent(QMouseEvent *e)
 {
-    if(e->y() < titleBar->height() and e->x() < titleBar->width() - 120)
+    if(e->y() < titleBar->height() && e->x() < titleBar->width() - 120)
     {
         swithMaxNormal();
         e->accept();
@@ -232,7 +232,7 @@ void FMainWindow::mouseMoveEvent(QMouseEvent *e)
     else
     {
 
-        if(e->y() < titleBar->height() and e->x() > titleBar->width() - 120)
+        if(e->y() < titleBar->height() && e->x() > titleBar->width() - 120)
         {
             e->ignore();
         }
@@ -297,7 +297,7 @@ void FMainWindow::onSystemTrayIconClicked(QSystemTrayIcon::ActivationReason reas
             }
             else
             {
-                if(not locked)
+                if(! locked)
                 {
                     hide();
                 }

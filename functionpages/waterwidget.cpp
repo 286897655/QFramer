@@ -118,7 +118,7 @@ void WaterWidget::swicthAnimationType()
         parallelAnimationGroup->stop();
         sequentialAnimationGroup->start();
     }
-    animationFlag = not animationFlag;
+    animationFlag = ! animationFlag;
 }
 
 void WaterWidget::initAnimations()

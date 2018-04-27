@@ -79,7 +79,7 @@ QMap<QString, QAction*> SettingMenu::getActionMaps()
 void SettingMenu::switchActionState()
 {
     MainWindow::getInstance()->getFlyWidget()->setVisible(
-                not MainWindow::getInstance()->getFlyWidget()->isVisible());
+                ! MainWindow::getInstance()->getFlyWidget()->isVisible());
 
     if(MainWindow::getInstance()->getFlyWidget()->isVisible())
     {
@@ -94,5 +94,5 @@ void SettingMenu::switchActionState()
 void SettingMenu::switchFloatWindow()
 {
     MainWindow::getInstance()->getRightFloatWindow()->setVisible(\
-        not MainWindow::getInstance()->getRightFloatWindow()->isVisible());
+        ! MainWindow::getInstance()->getRightFloatWindow()->isVisible());
 }
